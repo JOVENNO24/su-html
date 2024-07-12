@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .popup {
+            background-color: whitesmoke;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            color: #333333f8;
+        }
+        
+        p {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .close-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .close-btn:hover {
+            background-color: #0056b3;
+        }
+        .popup p{
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://formsubmit.co/joenosybetourguidemada@gmail.com" method="POST">
+        <!--Honeypot-->
+        <input type="text" name="_honey" style="display: none;">
+        <!--Disable captcha-->
+        <input type="hidden"name="_captcha"value="false">
+        <input type="hidden" name="_next" value="http://localhost:52330/thanks.html">
+    <div class="popup">
+        <h2>Thank You!</h2>
+        <p>Your message has been sent successfully<br>
+it will be answered soon!
+        </p>
+        <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+    </form>
+    <script>
+        function closePopup() {
+            window.close(); // Close the popup window
+        }
+    </script>
+</body>
+</html>
